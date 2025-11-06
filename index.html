@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Trivia </title>
+<link rel="stylesheet" href="./style/style.css" />
+</head>
+<body>
+
+<section id="startScreen" class="screen">
+    <div class="wrap">
+    <header>
+        <div class="brand">
+        <div class="logo">TV</div>
+        <div>
+            <div class="title">Trivia </div>
+            <div class="subtitle">Selecciona una categoría y demuestra tus conocimientos</div>
+        </div>
+        </div>
+        <div>
+        <button id="viewBest" class="btn ghost">Mejor puntuación: <span id="bestScoreStart">0</span></button>
+        </div>
+    </header>
+
+    <div class="grid" id="categoryGrid">
+    </div>
+
+      <div class="start-actions">
+        <div style="color:var(--muted);font-size:13px">Andres Araos -- Esteban Peña -- Julian Mendoza</div>
+        <div>
+          <button id="startAny" class="btn">Comenzar (elige una categoría)</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gameScreen" class="screen hidden">
+    <div class="wrap" style="display:flex;flex-direction:column;align-items:center">
+      <div class="game-card" id="gameCard">
+        <div style="display:auto;justify-content:space-between;align-items:center">
+          <div style="font-weight:800">Categoría: <span id="catName"></span></div>
+          <div style="text-align:right">
+            <div style="font-weight:800;color:var(--navy)">Puntaje <span id="score">0</span></div>
+            <div style="font-size:12px;color:var(--muted)" id="qProgressText"></div>
+          </div>
+        </div>
+
+        <img id="qImage" class="q-img" src="" alt="Imagen pregunta" style="display:none" />
+
+        <div class="q-wrap">
+          <div class="q-text">
+            <p class="question" id="questionText">Aquí va la pregunta</p>
+            <div class="options" id="options"></div>
+            <div class="meta-row">
+              <div id="qCounter">Pregunta <strong id="qIndex">0</strong> / <strong id="qTotal">0</strong></div>
+              <div class="progress-small" aria-hidden><span id="smallProg"></span></div>
+            </div>
+          </div>
+        </div>
+
+        <div style="display:flex;justify-content:flex-end;margin-top:12px;gap:8px">
+          <button class="btn ghost" id="quitBtn">Salir</button>
+          <button class="btn" id="nextBtn" style="display:none">Siguiente</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="resultScreen" class="screen hidden">
+    <div class="wrap" style="display:flex;align-items:center;justify-content:center;flex-direction:column">
+      <div class="result-card">
+        <div style="font-size:14px;color:var(--muted);font-weight:700">Resultado</div>
+        <div class="result-score" id="finalScore">0</div>
+        <div class="result-msg" id="finalMsg"></div>
+        <div style="margin-top:18px">
+          <button class="btn" id="playAgain">Jugar de nuevo</button>
+          <button class="btn ghost" id="backHome">Volver a categorías</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<script src="./script/script.js"> </script>
+</body>
+</html>
