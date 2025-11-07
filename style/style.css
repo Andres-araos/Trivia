@@ -1,6 +1,12 @@
 :root{
---bg:#f7f8fb; --card:#ffffff; --navy:#0b2b40; --gold:#59c73b; --muted:#6b7280; --glass: rgba(255,255,255,0.85);
---success:#2e8b57; --danger:#c33;
+--bg:#f7f8fb;
+--card:#ffffff;
+--navy:#0b2b40;
+--gold:#59c73b;
+--muted:#6b7280;
+--glass: rgba(255,255,255,0.85);
+--success:#2e8b57;
+--danger:#c33;
 font-family:'arial', serif; color:var(--navy);
 }
 *{
