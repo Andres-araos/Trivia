@@ -11,8 +11,8 @@ def convertir_webp_a_jpg(ruta_webp, ruta_jpg):
         except Exception as e:
             print(f"Ocurrió un error: {e}")
 
-nombre_archivo_webp = "futbol.webp" 
-nombre_archivo_jpg = "futbol.jpeg"
+nombre_archivo_webp = "bolt.webp" 
+nombre_archivo_jpg = "bolt.jpeg"
 
 ruta_actual = os.path.dirname(__file__)
 ruta_completa_webp = os.path.join(ruta_actual, nombre_archivo_webp)
